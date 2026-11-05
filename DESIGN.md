@@ -11,7 +11,10 @@ This deployment preserves the finished game. All 72 files in `frontend/src/`, in
 gameplay, UI, sprite drawing and WebAudio music, are unchanged. This document describes
 their implementation rather than proposing a new design. Build configuration and static
 head metadata are the only frontend code changes. Findings remain in
-[`artifacts/validation.md`](./artifacts/validation.md).
+[`artifacts/validation.md`](./artifacts/validation.md). The revision rechecked the same
+tokens, components and mobile layouts in Chromium; no visual source changed. Current
+reproductions and build-base behavior are recorded in
+[`artifacts/revision-validation.md`](./artifacts/revision-validation.md).
 
 ## Colors
 

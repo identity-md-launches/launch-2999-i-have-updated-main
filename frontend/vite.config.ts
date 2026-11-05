@@ -3,12 +3,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig(({ command }) => {
+export default defineConfig(() => {
   const frontendPort = Number.parseInt(process.env.PORT || '', 10)
   const backendPort = Number.parseInt(process.env.BACKEND_PORT || '', 10)
-  // Static exports must also work beneath an IPFS gateway or directory prefix.
-  // Keep BASE_PATH support for the development proxy; production is portable.
-  const base = command === 'build' ? './' : process.env.BASE_PATH || './'
+  const base = process.env.BASE_PATH || './'
   const hasAbsBase = base.startsWith('/')
   const apiBasePrefix = hasAbsBase ? base.replace(/\/$/, '') : ''
 

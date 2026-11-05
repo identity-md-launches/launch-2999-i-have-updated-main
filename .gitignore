@@ -6,6 +6,9 @@ dist/
 !/artifacts/
 !/artifacts/**
 node_modules/
+# Submission path budget: **/.cache/** and **/.npm/** = 0 bytes (generated caches excluded).
+.cache/
+.npm/
 .vite/
 *.tsbuildinfo
 .vulcan/

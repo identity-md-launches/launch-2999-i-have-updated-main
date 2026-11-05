@@ -1,0 +1,804 @@
+{
+  "export": "dist/",
+  "mount": "/preview/",
+  "browser": "Chromium",
+  "api": "Absent; actual static-server HTML 404, no success responses supplied",
+  "findings": {
+    "contrast": {
+      "viewport": [
+        390,
+        844
+      ],
+      "audit": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".mt-1"
+              ],
+              "html": "<p class=\"mt-1 text-center text-[11px] text-[#5f5880]\">Everything you buy changes how Squeek looks.</p>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #5f5880, background color: #141220, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1",
+              "checks": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#5f5880",
+                    "bgColor": "#141220",
+                    "contrastRatio": 2.8,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "normal",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1"
+                  }
+                }
+              ]
+            },
+            {
+              "target": [
+                ".mt-6.max-w-\\[470px\\].leading-relaxed"
+              ],
+              "html": "<p class=\"mt-6 max-w-[470px] text-center text-[10px] leading-relaxed text-[#5f5880]\">Coins are in-game points, not SQK tokens. Connecting a wallet only links your address to your progress and achievements \u2014 the game never asks you to sign or pay.</p>",
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #5f5880, background color: #0d0c16, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1",
+              "checks": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#5f5880",
+                    "bgColor": "#0d0c16",
+                    "contrastRatio": 2.95,
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "normal",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "names": {
+      "viewport": [
+        390,
+        844
+      ],
+      "audit": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": [
+            {
+              "target": [
+                ".hover\\:bg-\\[\\#221c3a\\].px-2\\.5.transition-colors:nth-child(1)"
+              ],
+              "html": "<button type=\"button\" class=\"flex items-center gap-1.5 rounded-md border-2 px-2.5 py-1.5 text-[11px] font-semibold transition-colors border-[#37305a] bg-[#141221]/90 text-[#cfc9e8] hover:bg-[#221c3a]\" style=\"font-family: \"Be Vietnam Pro\", system-ui, sans-serif;\">",
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "checks": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null
+                },
+                {
+                  "id": "aria-label",
+                  "data": null
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  }
+                },
+                {
+                  "id": "implicit-label",
+                  "data": null
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "target": [
+                ".hover\\:bg-\\[\\#221c3a\\].px-2\\.5.transition-colors:nth-child(2)"
+              ],
+              "html": "<button type=\"button\" class=\"flex items-center gap-1.5 rounded-md border-2 px-2.5 py-1.5 text-[11px] font-semibold transition-colors border-[#37305a] bg-[#141221]/90 text-[#cfc9e8] hover:bg-[#221c3a]\" style=\"font-family: \"Be Vietnam Pro\", system-ui, sans-serif;\">",
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "checks": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null
+                },
+                {
+                  "id": "aria-label",
+                  "data": null
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  }
+                },
+                {
+                  "id": "implicit-label",
+                  "data": null
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "target": [
+                ".hover\\:bg-\\[\\#221c3a\\].px-2\\.5.transition-colors:nth-child(3)"
+              ],
+              "html": "<button type=\"button\" class=\"flex items-center gap-1.5 rounded-md border-2 px-2.5 py-1.5 text-[11px] font-semibold transition-colors border-[#37305a] bg-[#141221]/90 text-[#cfc9e8] hover:bg-[#221c3a]\" style=\"font-family: \"Be Vietnam Pro\", system-ui, sans-serif;\">",
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "checks": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null
+                },
+                {
+                  "id": "aria-label",
+                  "data": null
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  }
+                },
+                {
+                  "id": "implicit-label",
+                  "data": null
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "target": [
+                ".hover\\:bg-\\[\\#221c3a\\].px-2\\.5.transition-colors:nth-child(4)"
+              ],
+              "html": "<button type=\"button\" class=\"flex items-center gap-1.5 rounded-md border-2 px-2.5 py-1.5 text-[11px] font-semibold transition-colors border-[#37305a] bg-[#141221]/90 text-[#cfc9e8] hover:bg-[#221c3a]\" style=\"font-family: \"Be Vietnam Pro\", system-ui, sans-serif;\">",
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "checks": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null
+                },
+                {
+                  "id": "aria-label",
+                  "data": null
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  }
+                },
+                {
+                  "id": "implicit-label",
+                  "data": null
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "target": [
+                ".hover\\:bg-\\[\\#e8b23a\\]\\/20"
+              ],
+              "html": "<button type=\"button\" class=\"flex items-center gap-1.5 rounded-md border-2 px-2.5 py-1.5 text-[11px] font-semibold transition-colors border-[#e8b23a] bg-[#e8b23a]/10 text-[#ffd977] hover:bg-[#e8b23a]/20\" style=\"font-family: \"Be Vietnam Pro\", system-ui, sans-serif;\">",
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "checks": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null
+                },
+                {
+                  "id": "aria-label",
+                  "data": null
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  }
+                },
+                {
+                  "id": "implicit-label",
+                  "data": null
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null
+                }
+              ]
+            },
+            {
+              "target": [
+                ".p-1"
+              ],
+              "html": "<button type=\"button\" class=\"rounded border-2 border-[#37305a] p-1 text-[#9f98c4] hover:bg-[#241f3d]\">",
+              "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+              "checks": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null
+                },
+                {
+                  "id": "aria-label",
+                  "data": null
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  }
+                },
+                {
+                  "id": "implicit-label",
+                  "data": null
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hud": {
+      "viewport": [
+        390,
+        844
+      ],
+      "energy": {
+        "x": 84,
+        "y": 14.25,
+        "width": 194,
+        "height": 35
+      },
+      "buttons": [
+        {
+          "rect": {
+            "x": 116,
+            "y": 12,
+            "width": 37,
+            "height": 29
+          },
+          "ariaLabel": null,
+          "title": "",
+          "text": ""
+        },
+        {
+          "rect": {
+            "x": 161,
+            "y": 12,
+            "width": 37,
+            "height": 29
+          },
+          "ariaLabel": null,
+          "title": "",
+          "text": ""
+        },
+        {
+          "rect": {
+            "x": 206,
+            "y": 12,
+            "width": 37,
+            "height": 29
+          },
+          "ariaLabel": null,
+          "title": "",
+          "text": ""
+        },
+        {
+          "rect": {
+            "x": 251,
+            "y": 12,
+            "width": 37,
+            "height": 29
+          },
+          "ariaLabel": null,
+          "title": "",
+          "text": ""
+        },
+        {
+          "rect": {
+            "x": 296,
+            "y": 12,
+            "width": 37,
+            "height": 29
+          },
+          "ariaLabel": null,
+          "title": "Sound on \u2014 click to mute",
+          "text": ""
+        },
+        {
+          "rect": {
+            "x": 341,
+            "y": 12,
+            "width": 37,
+            "height": 29
+          },
+          "ariaLabel": null,
+          "title": "",
+          "text": ""
+        }
+      ],
+      "overlapping": 4
+    },
+    "leaderboard": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "text": "Nobody on the board yet \u2014 you could be the first.",
+      "requests": [
+        {
+          "path": "/preview/api/leaderboard",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/leaderboard",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/leaderboard",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/leaderboard",
+          "status": 404
+        }
+      ]
+    },
+    "badge": {
+      "viewport": [
+        1200,
+        630
+      ],
+      "menuCenter": {
+        "x": 1148.5,
+        "y": 601
+      },
+      "hitElement": "svg",
+      "badge": "surf-badge"
+    },
+    "autosave": {
+      "before": {
+        "x": 144,
+        "y": 659
+      },
+      "after": {
+        "x": 212,
+        "y": 659
+      },
+      "claim": "Progress saves automatically",
+      "continueCount": 0,
+      "localStorageKeys": [
+        "squeek.key",
+        "squeek.name"
+      ],
+      "saveStatuses": [
+        404,
+        404,
+        404
+      ],
+      "continueAfterReload": 0
+    }
+  },
+  "pageErrors": [],
+  "baseConfiguration": {
+    "upstreamMain": "73a22ca2f54ad545d57540b7060286c91f4f0a1b",
+    "viteMatchesUpstream": true,
+    "rootBuildScript": "cd frontend && npm install --no-audit --no-fund && BASE_PATH=./ npm run build:client && cd .. && rm -rf dist && cp -r frontend/dist/client dist",
+    "upstreamBuildScript": "cd frontend && npm install --no-audit --no-fund && BASE_PATH=/ npm run build:client && cd .. && mkdir -p dist && cp -R frontend/dist/client/. dist/",
+    "relativeBuildUrls": [
+      "./favicon.svg",
+      "./assets/index-BtENxpuP.js",
+      "./assets/index-CHSencgf.css"
+    ],
+    "explicitSlashBuildUrls": [
+      "./favicon.svg",
+      "/assets/index-BI4RFt-t.js",
+      "/assets/index-CHSencgf.css"
+    ]
+  },
+  "interactionChecks": [
+    {
+      "name": "chromium first screen at 320",
+      "passed": true,
+      "detail": {
+        "heading": {
+          "x": 17,
+          "y": 40,
+          "width": 286,
+          "height": 32.5
+        },
+        "action": {
+          "x": 38,
+          "y": 516.5,
+          "width": 244,
+          "height": 34
+        },
+        "horizontalOverflow": 0
+      }
+    },
+    {
+      "name": "chromium first screen at 390",
+      "passed": true,
+      "detail": {
+        "heading": {
+          "x": 52,
+          "y": 40,
+          "width": 286,
+          "height": 32.5
+        },
+        "action": {
+          "x": 38,
+          "y": 478.875,
+          "width": 314,
+          "height": 34
+        },
+        "horizontalOverflow": 0
+      }
+    },
+    {
+      "name": "chromium first screen at 768",
+      "passed": true,
+      "detail": {
+        "heading": {
+          "x": 241,
+          "y": 40,
+          "width": 286,
+          "height": 32.5
+        },
+        "action": {
+          "x": 96,
+          "y": 478.875,
+          "width": 576,
+          "height": 34
+        },
+        "horizontalOverflow": 0
+      }
+    },
+    {
+      "name": "chromium first screen at 1440",
+      "passed": true,
+      "detail": {
+        "heading": {
+          "x": 577,
+          "y": 40,
+          "width": 286,
+          "height": 32.5
+        },
+        "action": {
+          "x": 432,
+          "y": 478.875,
+          "width": 576,
+          "height": 34
+        },
+        "horizontalOverflow": 0
+      }
+    },
+    {
+      "name": "chromium font files",
+      "passed": true,
+      "detail": {
+        "pixel": true,
+        "body": true
+      }
+    },
+    {
+      "name": "chromium optional wallet fallback",
+      "passed": true
+    },
+    {
+      "name": "chromium share panel and thread",
+      "passed": true
+    },
+    {
+      "name": "chromium keyboard starts a named game",
+      "passed": true
+    },
+    {
+      "name": "chromium keyboard movement",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 144,
+          "y": 659
+        },
+        "after": {
+          "x": 215,
+          "y": 659
+        }
+      }
+    },
+    {
+      "name": "chromium mute toggle",
+      "passed": true
+    },
+    {
+      "name": "chromium QUESTS & ACHIEVEMENTS panel",
+      "passed": true
+    },
+    {
+      "name": "chromium SQUEEK'S FLAT panel",
+      "passed": true
+    },
+    {
+      "name": "chromium LEADERBOARD panel",
+      "passed": true
+    },
+    {
+      "name": "chromium SQUEEKCHAIN \u00b7 LIVE panel",
+      "passed": true
+    },
+    {
+      "name": "chromium touch movement",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 215,
+          "y": 659
+        },
+        "after": {
+          "x": 283,
+          "y": 659
+        }
+      }
+    },
+    {
+      "name": "chromium Menu pointer target",
+      "passed": false,
+      "detail": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" class=\"inline-flex items-center justify-center gap-1.5 rounded-md border-2 px-3 py-1.5 text-[12px] font-semibold transition-colors disabled:opacity-40 disabled:cursor-not-allowed border-[#37305a] bg-[#1c1830] text-[#cfc9e8] hover:bg-[#272141] absolute bottom-3 right-3 z-20\">\u2026</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <svg width=\"40\" height=\"13\" viewBox=\"0 0 63 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\u2026</svg> from <a id=\"surf-badge\" target=\"_blank\" href=\"https://asksurf.ai\" rel=\"noopener noreferrer\" aria-label=\"Made by Surf\">\u2026</a> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <svg width=\"40\" height=\"13\" viewBox=\"0 0 63 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\u2026</svg> from <a id=\"surf-badge\" target=\"_blank\" href=\"https://asksurf.ai\" rel=\"noopener noreferrer\" aria-label=\"Made by Surf\">\u2026</a> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    9 \u00d7 waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <svg width=\"40\" height=\"13\" viewBox=\"0 0 63 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\u2026</svg> from <a id=\"surf-badge\" target=\"_blank\" href=\"https://asksurf.ai\" rel=\"noopener noreferrer\" aria-label=\"Made by Surf\">\u2026</a> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "name": "chromium keyboard exit without backend",
+      "passed": true
+    },
+    {
+      "name": "chromium script and local asset errors",
+      "passed": true,
+      "detail": {
+        "pageErrors": [],
+        "missingAssets": [],
+        "externalBlocked": [
+          "fonts.googleapis.com"
+        ],
+        "optionalBackendResponses": [
+          {
+            "path": "/preview/api/squeekchain/overview",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/squeekchain/overview",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/progress/save",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/progress/save",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/squeekchain/overview",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/leaderboard",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/squeekchain/overview",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/squeekchain/overview",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/progress/save",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/progress/save",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/progress/[player]",
+            "status": 404
+          },
+          {
+            "path": "/preview/api/progress/save",
+            "status": 404
+          }
+        ]
+      }
+    },
+    {
+      "name": "webkit availability",
+      "skipped": true,
+      "detail": "WebKit could not launch: required system shared libraries are missing (including libgtk-4.so.1)."
+    }
+  ],
+  "designProbe": [
+    {
+      "name": "render",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 9636,
+      "output": "renders, no script errors or missing local files\nexternal hosts: fonts.googleapis.com"
+    },
+    {
+      "name": "layout",
+      "passed": false,
+      "exitCode": 1,
+      "durationMs": 0,
+      "output": "no horizontal scroll at 320, 390 or 1440\nno text box overlaps another\n1 floating controls cover text:\n390px: #surf-badge covers div.mx-auto.flex > div.mt-4.flex:nth-of-type(3) > span.inline-flex.items-center:nth-of-type(4) > span (\"Progress saves automatically\")\nno text cut off by overflow: hidden"
+    },
+    {
+      "name": "targets",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": "all 5 controls at least 24px or spaced at 390\n4 under the 44px comfortable size"
+    },
+    {
+      "name": "contrast",
+      "passed": false,
+      "exitCode": 1,
+      "durationMs": 0,
+      "output": "1440px: div.min-h-screen.w-full > div.mx-auto.flex > div.rounded-lg.border-2:nth-of-type(2) > p.mt-1.text-center \"Everything you buy changes how Squeek lo\" 2.81:1\n1440px: #root > div.min-h-screen.w-full > div.mx-auto.flex > p.mt-6.text-center:nth-of-type(2) \"Coins are in-game points, not SQK tokens\" 2.95:1"
+    },
+    {
+      "name": "casing",
+      "passed": false,
+      "exitCode": 1,
+      "durationMs": 2,
+      "output": "2 all-caps text boxes in content:\n1440px: div.min-h-screen.w-full > div.mx-auto.flex > div.text-center:nth-of-type(1) > h1.leading-tight \"SQUEEK LIFE\"\n1440px: div.min-h-screen.w-full > div.mx-auto.flex > div.text-center:nth-of-type(1) > p.mt-3.tracking-widest \"FROM RAGS TO RICHES\""
+    },
+    {
+      "name": "tracking",
+      "passed": false,
+      "exitCode": 1,
+      "durationMs": 0,
+      "output": "1 text boxes in content tracked wider than +0.04em, or tighter than -0.04em below 28px:\n1440px: div.min-h-screen.w-full > div.mx-auto.flex > div.text-center:nth-of-type(1) > p.mt-3.tracking-widest \"FROM RAGS TO RICHES\" 0.100em"
+    },
+    {
+      "name": "eyebrows",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": "no kicker labels above headings"
+    },
+    {
+      "name": "type-sizes",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": "390: 3 sizes in use, 5 with one-offs (10px\u00d75, 11px\u00d74, 12px\u00d74, 13px\u00d71, 26px\u00d71)\n1440: 3 sizes in use, 5 with one-offs (10px\u00d75, 11px\u00d74, 12px\u00d74, 13px\u00d71, 26px\u00d71)\nbar: 6 sizes used more than once, 8 counting one-offs, per width"
+    },
+    {
+      "name": "type-faces",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": "families (3): press start 2p, be vietnam pro, lato\nweights (3): 400, 500, 600\nweight 500 outside mono (noted, not counted): 1, e.g. #surf-badge > span \"Made by\""
+    },
+    {
+      "name": "glyphs",
+      "passed": false,
+      "exitCode": 1,
+      "durationMs": 0,
+      "output": "1 em dashes:\ndiv.mx-auto.flex > div.rounded-lg.border-2:nth-of-type(2) > div.mt-4.flex:nth-of-type(2) > span \"EVM wallet (optional) \u2014 links your run + onchain s\"\n"
+    },
+    {
+      "name": "slogans",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": "no two-beat taglines"
+    },
+    {
+      "name": "repetition",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 1,
+      "output": "no repeated lines"
+    },
+    {
+      "name": "copy-budget",
+      "passed": false,
+      "exitCode": 1,
+      "durationMs": 0,
+      "output": "prose on the first screen: 76 words at 390 (bar 60), 76 at 1440 (bar 90)\nall words on the first screen: 107 at 390, 107 at 1440\nwhole page: 107 words, 76 of them prose"
+    },
+    {
+      "name": "chrome",
+      "passed": false,
+      "exitCode": 1,
+      "durationMs": 0,
+      "output": "border and shadow together: 1 (#root > div.min-h-screen.w-full > div.mx-auto.flex > div.rounded-lg.border-2:nth-of-type(2))\ncards inside cards: 1 (div.min-h-screen.w-full > div.mx-auto.flex > div.rounded-lg.border-2:nth-of-type(2) > div.mt-4.flex:nth-of-type(2) in #root > div.min-h-screen.w-full > div.mx-auto.flex > div.rounded-lg.border-2:nth-of-type(2))\ngradient text: 0"
+    },
+    {
+      "name": "motion",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": "transition: all on 0 elements\nendless animations: 0; still running with reduced motion: 0"
+    },
+    {
+      "name": "share",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 0,
+      "output": "title \"Squeek Life \u2014 From Rags to Riches\", favicon, og:title, og:image, description"
+    }
+  ]
+}

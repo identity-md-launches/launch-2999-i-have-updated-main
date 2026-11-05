@@ -118,8 +118,10 @@ The title screen's save/live-data claims are original UI and depend on the optio
 
 ### Validation of this export
 
-The production build and `npm run type-check` passed. A separate `BASE_PATH=/` client build
-also passed and produced the same files with relative asset URLs. To preserve protected
+The revision production build and `npm run type-check` passed. A separate `BASE_PATH=/`
+client build also passed and now produces root-absolute `/assets/` URLs, confirming that
+Vite honors the supplied base. The protected root build script still selects `BASE_PATH=./`;
+its rebuilt 48-file export matches the accepted export byte for byte. To preserve protected
 paths during this assignment, builds ran from the repository root of a disposable copy
 under `test/scratch/`; its source files matched this repository, and its client output was
 copied byte for byte into `dist/`.
@@ -138,8 +140,9 @@ motion preferences. Gameplay, UI, art, audio and all `frontend/src/` files are u
 WebKit could not launch because required system libraries were unavailable; Safari is not
 verified. Physical devices, assistive technologies and the full game ending were not tested.
 
-Read [`artifacts/validation.md`](./artifacts/validation.md) for commands, six-domain review,
-source locations, screenshots and limitations; [`DESIGN.md`](./DESIGN.md) describes the
+Read [`artifacts/revision-validation.md`](./artifacts/revision-validation.md) for current
+commands, reproduced findings and scope decisions, and [`artifacts/validation.md`](./artifacts/validation.md)
+for the accepted-round six-domain review and screenshots; [`DESIGN.md`](./DESIGN.md) describes the
 implemented design. These are worker observations, not an independent certification.
 
 The dependency-free integrity check can be rerun with:
@@ -210,9 +213,12 @@ For a static-only host, serve the committed `dist/` directory directly; no API r
 backend process is needed. Existing optional platform configuration is not needed to serve
 this export. See the offline behavior above for the resulting feature limitations.
 
-Production Vite builds normalize the base to `./`, including when invoked with `BASE_PATH=/`,
-so the same export works at a root domain or gateway subpath. Development still honors
-`BASE_PATH`. The static head preserves the `squeekchain-project` tag and includes the game
+Vite uses upstream's `process.env.BASE_PATH || './'` for both production and development.
+`BASE_PATH=/` is honored for a root-domain build; `BASE_PATH=./` produces portable relative
+URLs. The root `package.json` remains protected by this assignment and still selects `./`,
+so the delivered export works at a root domain or gateway subpath. Applying upstream's
+root-script change requires the requester to lift that manifest restriction. The static
+head preserves the `squeekchain-project` tag and includes the game
 title, description, pixel-mouse favicon and a 1200×630 screenshot for Open Graph. The game
 source, artwork generator and audio engine are unchanged. The `.gitignore` exception has an
 explicit **4 MiB budget for `/dist/**`** and **1 MiB for `/artifacts/**`** (validation and

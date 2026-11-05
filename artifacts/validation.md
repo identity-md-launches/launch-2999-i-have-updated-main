@@ -1,5 +1,11 @@
 # Static deployment validation — 2026-11-05
 
+**Accepted-round historical report.** The revision restores upstream Vite base handling;
+its explicit `BASE_PATH=/` build now emits absolute asset paths. Read
+[`revision-validation.md`](./revision-validation.md) for current results and the scope
+decisions for all seven review findings. Statements below about forced relative Vite
+builds describe the earlier implementation, not the delivered configuration.
+
 The production export is present and playable. Build and typecheck passed. The review is
 not a clean accessibility/responsiveness verdict: the unchanged game has the defects
 below, one interaction check fails, and WebKit was unavailable. Public HTTPS publication
