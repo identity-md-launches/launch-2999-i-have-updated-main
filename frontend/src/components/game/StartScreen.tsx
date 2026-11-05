@@ -97,6 +97,7 @@ export function StartScreen({
     }
   };
 
+
   return (
     <div className="min-h-screen w-full overflow-y-auto bg-[#0d0c16] px-4 py-10" style={VN}>
       <div className="mx-auto flex w-full max-w-[620px] flex-col items-center">
@@ -176,6 +177,7 @@ export function StartScreen({
         <button type="button" className={`${btnGhost} mt-5`} onClick={() => setShareOpen(true)} style={VN}>
           <Send size={12} /> Share this game on X
         </button>
+
 
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           <span className={chipClass}>

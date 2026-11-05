@@ -11,6 +11,8 @@ Gói zip này chứa toàn bộ mã nguồn của game **Squeek Life — From Ra
 | `frontend/vercel.json` | Cấu hình sẵn để deploy frontend lên Vercel. |
 | `CLAUDE.md` | Quy ước của scaffold gốc (không bắt buộc khi deploy). |
 
+> **Deploy qua imd.fun (The Buildoooooor)?** Xem riêng file [`IMD-DEPLOY.md`](./IMD-DEPLOY.md) — có sẵn brief để dán vào trang launch và lưu ý về chi phí 0,5 IMD.
+
 ## 1. Chạy thử trên máy
 
 ```bash
@@ -72,3 +74,4 @@ Ba lựa chọn thực tế:
 - Dữ liệu Squeekchain (bánh xe, SQK, block, hoạt động onchain) được backend gọi live từ `https://api.squeekchain.com/v1/...` và cache ngắn hạn; khi chain nghỉ thì UI hiện trạng thái nghỉ chứ không hiện số giả.
 - Game chỉ dùng một trang duy nhất nên không cần rewrite SPA. Nếu bạn thêm route phía client, thêm rewrite `{"source": "/(.*)", "destination": "/index.html"}`.
 - Ví chỉ dùng để liên kết địa chỉ với tiến trình (read-only, không ký giao dịch). Coins là điểm trong game, không phải token SQK.
+

@@ -1,0 +1,15 @@
+{
+  "name": "squeek-life",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Squeek Life — From Rags to Riches. Pixel-art life-sim adventure game for Squeekchain. Static frontend lives in frontend/, optional Express API in backend/.",
+  "scripts": {
+    "build": "cd frontend && npm install --no-audit --no-fund && BASE_PATH=./ npm run build:client && cd .. && rm -rf dist && cp -r frontend/dist/client dist",
+    "build:frontend": "cd frontend && npm install --no-audit --no-fund && BASE_PATH=./ npm run build:client",
+    "start": "cd backend && node server.js",
+    "type-check": "cd frontend && npm run type-check"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
