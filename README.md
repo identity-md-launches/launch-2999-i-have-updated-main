@@ -4,6 +4,8 @@ A pixel rags-to-riches life sim that runs in the browser: scavenge trash in the 
 jobs in the office district, upgrade your look, and talk your way past the golden gate into
 the rich district. Real Squeekchain data drives the WHEELY9000 station and the onchain panel.
 
+squeekchain-project: e8f5e568-69c8-4f8f-af6c-fcc13af273c0
+
 ## Controls
 
 | Key | Action |
