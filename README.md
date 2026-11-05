@@ -5,7 +5,11 @@ slums with torn rags and zero Coins, scavenges the bins for a living, works his 
 office ladder, and — if he dresses the part and makes a name for himself — walks through the
 golden gate into the rich district.
 
-**Play:** https://finish-product-322f7d.surf.computer/
+**Previously recorded hosted version:** https://finish-product-322f7d.surf.computer/
+
+This delivery contains the production static export in [`dist/`](./dist/), ready for the
+contributor network publisher. The address above predates this delivery; no new public
+deployment URL has been issued in this worker session.
 
 Every pixel of art and every note of music is generated in code: the canvas engine draws the
 whole city with `fillRect`, and the soundtrack is WebAudio chiptune. There are no image or
@@ -66,25 +70,97 @@ a colour-coded key badge, so nothing is ever drawn over the character.
 
 ---
 
-## Run it locally
+## Install, build and preview
 
-Requires **Bun** (or Node 20+ with npm) and, for the backend, a Surf API key.
+Requires **Node 20+ and npm**. The static game needs no environment variables, credentials,
+backend, wallet or server-side rendering.
+
+Run these commands from the repository root:
 
 ```bash
-# 1. Backend — progress, leaderboard, Squeekchain proxy
-cd backend
-bun install
-cp .env.example .env          # then put your SURF_API_KEY in it
-bun run dev                   # → http://localhost:3001
+# Install the existing frontend dependencies.
+npm --prefix frontend install --no-audit --no-fund
 
-# 2. Frontend — the game
-cd ../frontend
-bun install
-PORT=5173 BACKEND_PORT=3001 BASE_PATH=/ bun run dev   # → http://localhost:5173
+# Production build; installs dependencies again if needed, then copies the client export.
+npm run build
+
+# TypeScript check.
+npm run type-check
+
+# Serve the exact finished export, with no backend or SPA fallback.
+python3 -m http.server 4173 --directory dist
 ```
 
-The game itself runs without the backend: saving, the leaderboard and the onchain panel
-degrade to honest offline states, and everything else plays normally.
+Open `http://localhost:4173/`. Rebuild after source changes with `npm run build`, then reload
+the preview. The build produces `frontend/dist/client/` and copies its complete contents to
+root `dist/`, including **`dist/index.html`**, JavaScript, CSS, local game fonts, favicon,
+font licenses and the social preview image. Serve over HTTP(S); opening HTML with `file://`
+does not support its ES modules correctly.
+
+For development, `npm --prefix frontend run dev` starts Vite. The optional API requires its
+own setup; see `DEPLOY.md`. The tested static deployment leaves it offline.
+
+`frontend/bun.lock` and `backend/bun.lock` are the existing tracked lockfiles and remain
+unchanged, as do both package manifests. The npm build uses the manifest's versions/ranges;
+it does not consume the Bun lockfile. No new runtime dependencies were added.
+
+### Offline behavior
+
+The city, controls, intro, quests, home panel and soundtrack run without the API. Name,
+player identifier and mute preference are stored locally. **Run state is saved to the
+optional backend, not to local storage:** without it, progress does not survive Menu or
+reload and Continue is unavailable. Keep the tab open to keep playing.
+
+The Squeekchain panel shows its existing error and retry control when the API is unavailable.
+The existing leaderboard falls back to an empty-board message, which does not distinguish
+an offline API from a genuinely empty board. Neither panel supplies invented live data.
+The title screen's save/live-data claims are original UI and depend on the optional backend.
+
+### Validation of this export
+
+The production build and `npm run type-check` passed. A separate `BASE_PATH=/` client build
+also passed and produced the same files with relative asset URLs. To preserve protected
+paths during this assignment, builds ran from the repository root of a disposable copy
+under `test/scratch/`; its source files matched this repository, and its client output was
+copied byte for byte into `dist/`.
+
+Chromium interaction checks: **17 passed, 1 failed**. The failure is existing scaffold
+chrome: the fixed “Made by Surf” badge intercepts the Menu button's central pointer target.
+Focusing Menu with the keyboard and pressing Enter works. Tests exercised name entry, New
+game, all three intro steps, keyboard and simulated touch movement, mute, optional-wallet
+fallback, sharing and clipboard, quests, home, leaderboard, Squeekchain errors, and exit.
+There were no script errors or failed local runtime assets; API 404s were expected.
+
+The pinned design probe scored **9/16**. It confirmed the first-screen title and New game
+at 390px, no horizontal scrolling at 320/390/1440, and complete metadata. Remaining findings
+include original low-contrast captions, badge overlap, compact/unnamed game controls and
+motion preferences. Gameplay, UI, art, audio and all `frontend/src/` files are unchanged.
+WebKit could not launch because required system libraries were unavailable; Safari is not
+verified. Physical devices, assistive technologies and the full game ending were not tested.
+
+Read [`artifacts/validation.md`](./artifacts/validation.md) for commands, six-domain review,
+source locations, screenshots and limitations; [`DESIGN.md`](./DESIGN.md) describes the
+implemented design. These are worker observations, not an independent certification.
+
+The dependency-free integrity check can be rerun with:
+
+```bash
+node scripts/validate-static.mjs
+```
+
+To repeat browser checks without adding a project dependency:
+
+```bash
+npm install --prefix test/scratch/browser-deps --no-audit --no-fund playwright@1.61.0
+PLAYWRIGHT_BROWSERS_PATH="$PWD/test/scratch/playwright-browsers" node test/scratch/browser-deps/node_modules/playwright/cli.js install chromium --only-shell webkit
+PLAYWRIGHT_BROWSERS_PATH="$PWD/test/scratch/playwright-browsers" node scripts/validate-static.mjs test/scratch/browser-deps/node_modules/playwright/index.mjs
+```
+
+The browser test manages and closes its own HTTP server at a directory prefix (`/preview/`),
+blocks external requests and returns 404 for the absent API. It never submits a post, signs,
+or connects a real wallet. Outputs stay under `test/scratch/`, outside the delivery. Its
+exit code remains nonzero for the known Menu pointer failure; missing engines are recorded
+separately, never reported as tested.
 
 ---
 
@@ -130,9 +206,20 @@ copies the result into `dist/`):
 output `dist/client`, environment `BASE_PATH=/`.*
 
 
-The `/api/*` rewrite in both files points at a placeholder backend host — change it to your
-own backend URL, or delete the rewrite to run the game standalone (the onchain panel and
-leaderboard then show offline states).
+For a static-only host, serve the committed `dist/` directory directly; no API rewrite or
+backend process is needed. Existing optional platform configuration is not needed to serve
+this export. See the offline behavior above for the resulting feature limitations.
+
+Production Vite builds normalize the base to `./`, including when invoked with `BASE_PATH=/`,
+so the same export works at a root domain or gateway subpath. Development still honors
+`BASE_PATH`. The static head preserves the `squeekchain-project` tag and includes the game
+title, description, pixel-mouse favicon and a 1200×630 screenshot for Open Graph. The game
+source, artwork generator and audio engine are unchanged. The `.gitignore` exception has an
+explicit **4 MiB budget for `/dist/**`** and **1 MiB for `/artifacts/**`** (validation and
+screenshots only); nested dependency/cache directories remain ignored.
+
+This worker has prepared the static deployment artifact. Public pinning/domain assignment
+happens after submission; it has not obtained a new HTTPS URL or updated the earlier host.
 
 **Deploying through imd.fun (The Buildoooooor)?** See [`IMD-DEPLOY.md`](./IMD-DEPLOY.md) for
 the step-by-step flow, the ready-to-paste brief, and the cost note (0.5 IMD per request).

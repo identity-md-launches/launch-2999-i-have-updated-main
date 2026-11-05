@@ -1,5 +1,11 @@
-node_modules/
 dist/
+# Submission path budget: /dist/** <= 4 MiB (complete static runtime only).
+!/dist/
+!/dist/**
+# Submission path budget: /artifacts/** <= 1 MiB (validation and screenshots only).
+!/artifacts/
+!/artifacts/**
+node_modules/
 .vite/
 *.tsbuildinfo
 .vulcan/

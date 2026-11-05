@@ -1,0 +1,241 @@
+{
+  "menuViolations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "nodes": [
+        {
+          "target": [
+            ".mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #5f5880, background color: #141220, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "target": [
+            ".mt-6.max-w-\\[470px\\].leading-relaxed"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #5f5880, background color: #0d0c16, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ],
+  "gameViolations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "nodes": [
+        {
+          "target": [
+            ".hover\\:bg-\\[\\#221c3a\\].px-2\\.5.transition-colors:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "target": [
+            ".hover\\:bg-\\[\\#221c3a\\].px-2\\.5.transition-colors:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "target": [
+            ".hover\\:bg-\\[\\#221c3a\\].px-2\\.5.transition-colors:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "target": [
+            ".hover\\:bg-\\[\\#221c3a\\].px-2\\.5.transition-colors:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "target": [
+            ".hover\\:bg-\\[\\#e8b23a\\]\\/20"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "target": [
+            ".p-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ],
+  "incompleteMenu": [],
+  "incompleteGame": [
+    "bypass",
+    "color-contrast"
+  ],
+  "reducedMotionCanvasContinues": true,
+  "gameButtons": [
+    {
+      "text": "",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 116,
+        "y": 12,
+        "width": 37,
+        "height": 29
+      }
+    },
+    {
+      "text": "",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 161,
+        "y": 12,
+        "width": 37,
+        "height": 29
+      }
+    },
+    {
+      "text": "",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 206,
+        "y": 12,
+        "width": 37,
+        "height": 29
+      }
+    },
+    {
+      "text": "",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 251,
+        "y": 12,
+        "width": 37,
+        "height": 29
+      }
+    },
+    {
+      "text": "",
+      "title": "Sound on — click to mute",
+      "ariaLabel": null,
+      "rect": {
+        "x": 296,
+        "y": 12,
+        "width": 37,
+        "height": 29
+      }
+    },
+    {
+      "text": "",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 341,
+        "y": 12,
+        "width": 37,
+        "height": 29
+      }
+    },
+    {
+      "text": "▲",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 64,
+        "y": 736,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "text": "◀",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 16,
+        "y": 784,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "text": "▼",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 64,
+        "y": 784,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "text": "▶",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 112,
+        "y": 784,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "text": "E",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 180,
+        "y": 772,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "text": "F",
+      "title": "Ride / get off",
+      "ariaLabel": null,
+      "rect": {
+        "x": 260,
+        "y": 772,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "text": "Menu",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 299,
+        "y": 798,
+        "width": 79,
+        "height": 34
+      }
+    },
+    {
+      "text": "",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 331,
+        "y": 670.75,
+        "width": 25,
+        "height": 25
+      }
+    },
+    {
+      "text": "Continue ▸",
+      "title": "",
+      "ariaLabel": null,
+      "rect": {
+        "x": 264.96875,
+        "y": 776,
+        "width": 91.03125,
+        "height": 34
+      }
+    }
+  ]
+}

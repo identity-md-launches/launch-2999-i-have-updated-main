@@ -1,0 +1,221 @@
+[
+  {
+    "name": "chromium first screen at 320",
+    "passed": true,
+    "detail": {
+      "heading": {
+        "x": 17,
+        "y": 40,
+        "width": 286,
+        "height": 32.5
+      },
+      "action": {
+        "x": 38,
+        "y": 516.5,
+        "width": 244,
+        "height": 34
+      },
+      "horizontalOverflow": 0
+    }
+  },
+  {
+    "name": "chromium first screen at 390",
+    "passed": true,
+    "detail": {
+      "heading": {
+        "x": 52,
+        "y": 40,
+        "width": 286,
+        "height": 32.5
+      },
+      "action": {
+        "x": 38,
+        "y": 478.875,
+        "width": 314,
+        "height": 34
+      },
+      "horizontalOverflow": 0
+    }
+  },
+  {
+    "name": "chromium first screen at 768",
+    "passed": true,
+    "detail": {
+      "heading": {
+        "x": 241,
+        "y": 40,
+        "width": 286,
+        "height": 32.5
+      },
+      "action": {
+        "x": 96,
+        "y": 478.875,
+        "width": 576,
+        "height": 34
+      },
+      "horizontalOverflow": 0
+    }
+  },
+  {
+    "name": "chromium first screen at 1440",
+    "passed": true,
+    "detail": {
+      "heading": {
+        "x": 577,
+        "y": 40,
+        "width": 286,
+        "height": 32.5
+      },
+      "action": {
+        "x": 432,
+        "y": 478.875,
+        "width": 576,
+        "height": 34
+      },
+      "horizontalOverflow": 0
+    }
+  },
+  {
+    "name": "chromium font files",
+    "passed": true,
+    "detail": {
+      "pixel": true,
+      "body": true
+    }
+  },
+  {
+    "name": "chromium optional wallet fallback",
+    "passed": true
+  },
+  {
+    "name": "chromium share panel and thread",
+    "passed": true
+  },
+  {
+    "name": "chromium keyboard starts a named game",
+    "passed": true
+  },
+  {
+    "name": "chromium keyboard movement",
+    "passed": true,
+    "detail": {
+      "before": {
+        "x": 144,
+        "y": 659
+      },
+      "after": {
+        "x": 215,
+        "y": 659
+      }
+    }
+  },
+  {
+    "name": "chromium mute toggle",
+    "passed": true
+  },
+  {
+    "name": "chromium QUESTS & ACHIEVEMENTS panel",
+    "passed": true
+  },
+  {
+    "name": "chromium SQUEEK'S FLAT panel",
+    "passed": true
+  },
+  {
+    "name": "chromium LEADERBOARD panel",
+    "passed": true
+  },
+  {
+    "name": "chromium SQUEEKCHAIN · LIVE panel",
+    "passed": true
+  },
+  {
+    "name": "chromium touch movement",
+    "passed": true,
+    "detail": {
+      "before": {
+        "x": 215,
+        "y": 659
+      },
+      "after": {
+        "x": 283,
+        "y": 659
+      }
+    }
+  },
+  {
+    "name": "chromium Menu pointer target",
+    "passed": false,
+    "detail": "locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Menu', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" class=\"inline-flex items-center justify-center gap-1.5 rounded-md border-2 px-3 py-1.5 text-[12px] font-semibold transition-colors disabled:opacity-40 disabled:cursor-not-allowed border-[#37305a] bg-[#1c1830] text-[#cfc9e8] hover:bg-[#272141] absolute bottom-3 right-3 z-20\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <svg width=\"40\" height=\"13\" viewBox=\"0 0 63 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">…</svg> from <a id=\"surf-badge\" target=\"_blank\" href=\"https://asksurf.ai\" rel=\"noopener noreferrer\" aria-label=\"Made by Surf\">…</a> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <svg width=\"40\" height=\"13\" viewBox=\"0 0 63 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">…</svg> from <a id=\"surf-badge\" target=\"_blank\" href=\"https://asksurf.ai\" rel=\"noopener noreferrer\" aria-label=\"Made by Surf\">…</a> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    9 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <svg width=\"40\" height=\"13\" viewBox=\"0 0 63 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">…</svg> from <a id=\"surf-badge\" target=\"_blank\" href=\"https://asksurf.ai\" rel=\"noopener noreferrer\" aria-label=\"Made by Surf\">…</a> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n"
+  },
+  {
+    "name": "chromium keyboard exit without backend",
+    "passed": true
+  },
+  {
+    "name": "chromium script and local asset errors",
+    "passed": true,
+    "detail": {
+      "pageErrors": [],
+      "missingAssets": [],
+      "externalBlocked": [
+        "fonts.googleapis.com"
+      ],
+      "optionalBackendResponses": [
+        {
+          "path": "/preview/api/squeekchain/overview",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/squeekchain/overview",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/progress/save",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/progress/save",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/squeekchain/overview",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/leaderboard",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/squeekchain/overview",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/squeekchain/overview",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/progress/save",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/progress/save",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/progress/(session)",
+          "status": 404
+        },
+        {
+          "path": "/preview/api/progress/save",
+          "status": 404
+        }
+      ]
+    }
+  },
+  {
+    "name": "webkit availability",
+    "skipped": true,
+    "detail": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libenchant-2.so.2                                ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libwoff2dec.so.1.0.2                             ║\n╚══════════════════════════════════════════════════════╝"
+  }
+]

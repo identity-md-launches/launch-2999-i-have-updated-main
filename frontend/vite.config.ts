@@ -1,13 +1,14 @@
-import viteErrorReporter from "./.vulcan-error-reporter.js";
 import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig(() => {
+export default defineConfig(({ command }) => {
   const frontendPort = Number.parseInt(process.env.PORT || '', 10)
   const backendPort = Number.parseInt(process.env.BACKEND_PORT || '', 10)
-  const base = process.env.BASE_PATH || './'
+  // Static exports must also work beneath an IPFS gateway or directory prefix.
+  // Keep BASE_PATH support for the development proxy; production is portable.
+  const base = command === 'build' ? './' : process.env.BASE_PATH || './'
   const hasAbsBase = base.startsWith('/')
   const apiBasePrefix = hasAbsBase ? base.replace(/\/$/, '') : ''
 
@@ -21,8 +22,7 @@ export default defineConfig(() => {
 
   return {
     cacheDir: process.env.VITE_CACHE_DIR || 'node_modules/.vite',
-    plugins: [
-      viteErrorReporter({ vulcanDir: "/workspaces/.vulcan" }),react(), tailwindcss()],
+    plugins: [react(), tailwindcss()],
     server: {
       allowedHosts: true,
       host: '0.0.0.0',

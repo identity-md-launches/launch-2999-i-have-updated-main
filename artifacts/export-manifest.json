@@ -1,0 +1,247 @@
+{
+  "upstreamMain": "73a22ca2f54ad545d57540b7060286c91f4f0a1b",
+  "files": [
+    {
+      "path": "assets/App-BaDSyeeJ.js",
+      "bytes": 244462,
+      "sha256": "40b3343646472a7549a876568f4eb90ba19bbe6ee54259b0a291a8a6841aa2b8"
+    },
+    {
+      "path": "assets/App-CAdwNvFD.css",
+      "bytes": 19912,
+      "sha256": "088be65cb3d525857609a0a7a51ce3387597a81b6228294705fa2bbcb0e7d298"
+    },
+    {
+      "path": "assets/ErrorBoundary-BTVBwg4T.js",
+      "bytes": 1947,
+      "sha256": "f3897f85cc063b76a7bf76765ca8051f265fbb346b903b828f34e19e8f33d5b3"
+    },
+    {
+      "path": "assets/SqueekChart-BY8y5vQv.js",
+      "bytes": 1056965,
+      "sha256": "174afeb01bf6b6b1ec2ed9e7b8fd34b2b2c6484be72939201e66e51d5c9f8cf8"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-400-normal-PpnXBOrz.woff2",
+      "bytes": 21168,
+      "sha256": "03d1b589cff172e1a670b3573e731d3380bc326f80cf83b0d3504e3188e2e074"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-400-normal-bXgqVju9.woff",
+      "bytes": 16432,
+      "sha256": "c0190200223755a3c52bb47b9cf6c3604f19288599cfbbe5026904d5d439f7d7"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-500-normal-B6LVzGNe.woff2",
+      "bytes": 21892,
+      "sha256": "b621f77d35f777023aa11ca524462d511b4b28a813adbc0e9d15a10fc61dfe4e"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-500-normal-BJkVuMHw.woff",
+      "bytes": 16996,
+      "sha256": "0a905f6bc6f1120d20ad3dde690989db3149a98227026f2de47dca6aef71edab"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-700-normal-C2EtzaOi.woff",
+      "bytes": 16908,
+      "sha256": "f44cc3417bd1fcbddaaec0c02d5383dfcf34a16ef1fc32f8cf179ea4a468861b"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-700-normal-DlW1Zbsh.woff2",
+      "bytes": 22152,
+      "sha256": "a193dd87699bd2e18ddf72dc271493ea82a23dad9f5c334d9f2a257b1e05fc30"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-800-normal-BpHZASpI.woff2",
+      "bytes": 22320,
+      "sha256": "7c5d0871188c09339a6eb46948420ed9b11f3d06ea3ff1c5d1cf41b06a3504e7"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-800-normal-Cwp5p0gU.woff",
+      "bytes": 16992,
+      "sha256": "72c0817b5e4f58e5fba018c346b3d2f02c02cd8c3d96380c63941149fbc54249"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-ext-400-normal-CiZNW1ec.woff2",
+      "bytes": 13056,
+      "sha256": "f7a2811e471c2973a1179ce39da3ad6bb8082381aa8d1535ccfcbc3d6d78a052"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-ext-400-normal-DYBYyMQr.woff",
+      "bytes": 8900,
+      "sha256": "efff7513dcb30c597007e5d55f8fe5563d0023b276b120b711fad71e0845a9d5"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-ext-500-normal-CK0UkkKf.woff",
+      "bytes": 9200,
+      "sha256": "efa04a80e26991987639ada83ea6eeecdebedb8012f8999ae6805fff20f9456d"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-ext-500-normal-h0Fp6aX0.woff2",
+      "bytes": 13548,
+      "sha256": "947d592eb7676914507ff68fc11fcf2cfdecd6ebaf0fa2af6047f66a63ea7d0f"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-ext-700-normal-4Hjo2OtD.woff",
+      "bytes": 9188,
+      "sha256": "f3e8165ac1f16aa7967f7368ebc2b1189acc54abf540312ff97463ed9205af21"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-ext-700-normal-C8_gqRu2.woff2",
+      "bytes": 13852,
+      "sha256": "33d57e5bd840b03921568e08d2be1082d453e55f1ba55f421e41a1aa54e12601"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-ext-800-normal-BvOXQlBN.woff",
+      "bytes": 9176,
+      "sha256": "7f3bcf931148607df31580be1df6e535a7db2a7db085b1f94d8f6944d7344ef1"
+    },
+    {
+      "path": "assets/be-vietnam-pro-latin-ext-800-normal-GEpNgheG.woff2",
+      "bytes": 13752,
+      "sha256": "85a2008e6d5f2381a076d36d38771957b118683d0fff3029844737aff6b96a10"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-400-normal-BuGn0gnm.woff",
+      "bytes": 6568,
+      "sha256": "4d50c7991ca377aef28fb1fb24d4ce7ea64d69f6bd2661e7e74fb9d9fef11dc0"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-400-normal-CRcqvyg1.woff2",
+      "bytes": 11532,
+      "sha256": "dc085e2fba3414e5c5bf1e6172f921a9f81c5859946a4ed3d63c1e470d96a9e2"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-500-normal-CfdwVo8-.woff",
+      "bytes": 6884,
+      "sha256": "6b81283a46623b9a99bc7a1800f936549ead1f871d1dfcd803ddcd18c433a7d8"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-500-normal-DREgrEoJ.woff2",
+      "bytes": 12172,
+      "sha256": "86341610cbe907eecf461c9159c168d5efb52bb1a33963813a08f520555d8e66"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-700-normal-By_5yT39.woff",
+      "bytes": 6892,
+      "sha256": "4fa311d11645e588ac98d0e665920fd55eb0eb624c600d9e5dd007f4b9d5159c"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-700-normal-Csr0PCuG.woff2",
+      "bytes": 12468,
+      "sha256": "4f58af2d1c3e28a9ba14c51c82db2751d78344b75bdcb34de24a1031ebe59da6"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-800-normal-CA0HL1e4.woff",
+      "bytes": 6848,
+      "sha256": "76527d9cbc338473529e25185372f276b3c75ab6f2c3617e1536723c6e82cdd5"
+    },
+    {
+      "path": "assets/be-vietnam-pro-vietnamese-800-normal-D4LFh2W4.woff2",
+      "bytes": 12404,
+      "sha256": "26b241d1d5f489c8a65c1a3c4cdcdb48dd114a9ed7e0c0180182191f087cbe96"
+    },
+    {
+      "path": "assets/client-DnlDxDdQ.js",
+      "bytes": 185317,
+      "sha256": "18f0aa026aab27ec81076cc0755a4ffd58427eb8d53d26df96893c2861856685"
+    },
+    {
+      "path": "assets/index-BXWR2s2M.js",
+      "bytes": 478,
+      "sha256": "41a5289b16ce7c07ba81fbfd799546bdbed5738766a49e07abfbfa5665db3bf2"
+    },
+    {
+      "path": "assets/index-BtENxpuP.js",
+      "bytes": 4669,
+      "sha256": "47fc0815894d7720dd1a5f5b7219f6ac261aacf702b43a396ee7f4cf44ca8912"
+    },
+    {
+      "path": "assets/index-CHSencgf.css",
+      "bytes": 77516,
+      "sha256": "29e4586edfd1d6a462893822840ac090e1cdbfae75d492b57749603b8e8474eb"
+    },
+    {
+      "path": "assets/index-Da1RNYxz.js",
+      "bytes": 14841,
+      "sha256": "bf25dfa0dddc1f0997c9e18a7aa20092b48c72f5456699146537d95e0cc85c4f"
+    },
+    {
+      "path": "assets/index-Df5cY6wZ.js",
+      "bytes": 7938,
+      "sha256": "b8d7aeb9b4f319f632e43d7c9ce767d2a00ffe83163d4e894163ae5202aae58e"
+    },
+    {
+      "path": "assets/jsx-runtime-D_zvdyIk.js",
+      "bytes": 725,
+      "sha256": "9a9f4c93f46147e7cdce588af1497f6728a2e1d6e622c638f0a94da1b7fee8ab"
+    },
+    {
+      "path": "assets/press-start-2p-cyrillic-400-normal-DBn7fddJ.woff2",
+      "bytes": 6864,
+      "sha256": "c2a20dcb95ec8f4d1e8db6bd01dfedb669913f5e691e7baa3981b2d88a3b9ae3"
+    },
+    {
+      "path": "assets/press-start-2p-cyrillic-ext-400-normal-CIYZrvmP.woff2",
+      "bytes": 6704,
+      "sha256": "954380ff6f96dcb0cde857bb1cb906401908729cfbdd98140174bb1965f025c7"
+    },
+    {
+      "path": "assets/press-start-2p-greek-400-normal-DQfalijU.woff2",
+      "bytes": 6592,
+      "sha256": "fb54a8f8c24cd5c532c5d52ece3d82b9a08ed83bad076446b938f8f50353753f"
+    },
+    {
+      "path": "assets/press-start-2p-latin-400-normal-KLytu4cr.woff",
+      "bytes": 6328,
+      "sha256": "5639ed14ba3e96401f71dcf399e6e64bbcfa4110250d61ba6a9fcb969c9cc74f"
+    },
+    {
+      "path": "assets/press-start-2p-latin-400-normal-_wFEWmAB.woff2",
+      "bytes": 12512,
+      "sha256": "afec86997fdaf54af1f59358fa2c1e2a0f1d04146edad18e5cd141d0384a7548"
+    },
+    {
+      "path": "assets/press-start-2p-latin-ext-400-normal-DBgyq7ky.woff",
+      "bytes": 4944,
+      "sha256": "dafba7c0a81588efc4472194a010130d9eed7879c528b563eaafdef17fb970a0"
+    },
+    {
+      "path": "assets/press-start-2p-latin-ext-400-normal-DpfYvR5A.woff2",
+      "bytes": 9856,
+      "sha256": "3c7df3a15e173b8fa04ec9191171e72c314ddbac1b395e2b2e2092bb4f47cc8c"
+    },
+    {
+      "path": "assets/useQuery-CIghJpjm.js",
+      "bytes": 39304,
+      "sha256": "791b24d41a14a7324a96bafdc7dbef1c35264bffc966e5b96dd3b0b185c1f1b0"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 778,
+      "sha256": "c8f2b5d650b0f91ff0a2f8693cadf574656632a83372f43df54eae0717e3be53"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10762,
+      "sha256": "78308e531c4a117920c5c426d4ff996ba412d126eb1ca5e19b60fece155aeff5"
+    },
+    {
+      "path": "licenses/be-vietnam-pro-OFL.txt",
+      "bytes": 6476,
+      "sha256": "0bd4db1cda123af9d91794b0f98324b7d7d81aef0fcaf78c433160153f2c6f25"
+    },
+    {
+      "path": "licenses/press-start-2p-OFL.txt",
+      "bytes": 4412,
+      "sha256": "98e451fe911e5ee4a1a45359535dc30ea7df28b8d9a9cd1f741778efab1387ee"
+    },
+    {
+      "path": "social/squeek-life.png",
+      "bytes": 177873,
+      "sha256": "0e54cb2a47f958a971de57b9b4ed680f15e573999164448c30d3c1c7f3822c4a"
+    }
+  ],
+  "fileCount": 48,
+  "totalBytes": 2229475
+}
